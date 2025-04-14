@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Harihar Fort - Nashik</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/60/Harihar_Fort.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.65);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      animation: fadeIn 2.5s ease-in-out;
+      padding: 20px;
+    }
+
+    .overlay h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+    }
+
+    .overlay p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #ff6600;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #ff3300;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .history {
+      background-color: #111;
+      padding: 60px 20px;
+      text-align: center;
+      animation: slideUp 2s ease-in-out;
+    }
+
+    .history h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+
+    .history p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <h1>Harihar Fort</h1>
+    <p>One of the most thrilling forts near Nashik, famous for its vertical rock-cut stairs.</p>
+    <a href="https://www.youtube.com/watch?v=6DA6rEyJpgw" target="_blank" class="button">Watch Video</a>
+  </div>
+
+  <div class="history" id="history">
+    <h2>History of Harihar Fort</h2>
+    <p>
+      Harihar Fort, also known as Harshgad, was constructed during the Yadava dynasty. It was strategically important due to its location overlooking the trade route connecting Nashik to Gujarat. The fort is most known for its vertical 60-meter high rock-cut steps which are almost perpendicular. Despite its tough climb, it attracts many trekkers due to the adventure and panoramic views.
+    </p>
+  </div>
+
+</body>
+</html>
